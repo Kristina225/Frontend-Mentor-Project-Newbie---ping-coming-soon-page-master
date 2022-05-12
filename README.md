@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Kristina225/Frontend-Mentor-Project-Newbie---ping-coming-soon-page-master
+- Live Site URL: https://ping-coming-soon-page-master-fm15.netlify.app/
 
 ## My process
 
