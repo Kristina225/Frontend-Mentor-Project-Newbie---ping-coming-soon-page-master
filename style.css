@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-blue: #4f7df3;
+    --color-pale-blue: #c2d3ff;
+    --color-light-red: #ff5263;
+    --color-gray: #969696;
+    --color-very-dark-blue: #151f29; 
+}
+
+/* ------------------------------- MOBILE VIEW --------------------------------- */
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    background-color:#ffffff;
+}
+
+/* --------------------------------- Mobile: Header Styles -------------------- */
+
+.header {
+    margin: 8.1rem auto 0 auto;
+}
+
+.header__logo {
+    width: 5.6rem;
+}
+
+/* -------------- Mobile: Subscription Form and Illustration Styles -------------------- */
+
+.subscribe--container {
+    max-width: 30.2rem;
+    margin:  3.2rem auto 0 auto;
+    padding: 0 1rem 0 1rem; 
+}
+
+.subscribe__title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    color: var(--color-gray);
+}
+
+.subscribe__title span {
+    font-weight: 700;
+    color: var(--color-very-dark-blue);
+}
+
+.subscribe__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--color-very-dark-blue);
+}
+
+.subscribe__form {
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.subscribe__form--input {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    width: 28.1rem;
+    height: 4rem;
+    border: 1px solid var(--color-pale-blue);
+    border-radius: 2.8rem;
+    padding-left: 3.2rem;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
+    color: var(--color-very-dark-blue);
+}
+
+.subscribe__form--input::placeholder {
+    color: var(--color-pale-blue);
+}
+
+.subscribe__form--btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 2.8rem;
+    line-height: 1.6rem;
+    width: 28.1rem;
+    height: 4rem;
+    border: none;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.230414);
+    color: #fff;
+    background-color: var(--color-blue);
+    transition: background-color 0.2s ease;
+}
+
+.subscribe__form--btn:hover {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%, 0.9);
+} 
+
+.subscribe__form--btn:active {
+    transform: scale(0.9);
+}
+
+.subscribe__form--error {
+    display: none;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.13px;
+    color: var(--color-light-red);
+}
+
+.subscribe__form--error.show {
+    display: block;
+}
+
+.illustration--container {
+    margin: 7.2rem auto 0 auto;
+}
+
+.illustration--container img {
+    max-width: 32rem;
+}
+
+
+/* --------------------------- Mobile: Footer Styles -------------------- */
+
+.footer {
+    max-width: 17rem;
+    margin: 12rem auto 3.7rem auto;
+}
+
+.footer__social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.footer__social-media--link {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(76, 123, 243, 0.146498);
+    color: var(--color-blue);
+    transition: all 0.2s ease;
+}
+
+.footer__social-media--link:hover {
+    background-color: var(--color-blue);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.footer__copyright {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    margin-top: 2.7rem;
+    color: var(--color-gray)
+}
+
+
+
+/* ----------------------------------- DESKTOP VIEW -------------------------------- */
+
+@media only screen and (min-width: 500px) {
+    
+    /* --------------------------------- Desktop: Header Styles -------------------- */
+    
+    .header {
+        margin: 8rem auto 0 auto;
+    }
+    
+    .header__logo {
+        width: 9rem;
+    }
+    
+    /* -------------- Desktop: Subscription Form and Illustration Styles -------------------- */
+    
+    .subscribe--container {
+        max-width: 71.2rem;
+        margin:  4rem auto 0 auto;
+        padding: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .subscribe__title {
+        font-size: 4.8rem;
+        line-height: 6rem;
+    }
+    
+    .subscribe__text {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-top: 1.6rem;
+    }
+    
+    .subscribe__form {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1.6rem;
+    }
+    
+    .subscribe__form--input {
+        font-size: 1.6rem;
+        width: 42.1rem;
+        height: 5.6rem;
+        padding-left: 3rem;
+    }
+    
+    .subscribe__form--btn {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        width: 20rem;
+        height: 5.6rem;
+    }
+
+    .subscribe__form--error {
+        position: absolute;
+        bottom: -2.6rem;
+        left: 3.2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.15px;
+    }
+
+    .subscribe__form--error.show {
+        display: block;
+    }
+
+    .illustration--container {
+        margin: 9.4rem auto 0 auto;
+    }
+    
+    .illustration--container img {
+        max-width: 64rem;
+    }
+    
+    /* --------------------------- Desktop: Footer Styles -------------------- */
+    
+    .footer {
+        max-width: 20.4rem;
+        margin: 7.2rem auto 4.9rem auto;
+    }
+    
+    
+    .footer__copyright {
+        margin-top: 2.5rem;
+    }      
+}

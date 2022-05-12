@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://kit.fontawesome.com/e8f7929b62.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+<body>
+  <header class="header">
+    <img class="header__logo" src="images/logo.svg" alt="logo">
+  </header>
+  <main class="main">
+    <section class="subscribe--container">
+      <h1 class="subscribe__title">We are launching <span>soon!</span></h1>
+      <p class="subscribe__text">Subscribe and get notified</p>
+      <form action="/" method="post" class="subscribe__form" novalidate>
+        <input type="email" class="subscribe__form--input" placeholder="Your email address...">
+        <button type="submit" class="subscribe__form--btn">Notify Me</button>
+        <p class="subscribe__form--error show"></p>
+      </form>
+    </section>
+    <section class="illustration--container">
+      <img src="images/illustration-dashboard.png" alt="ping homapage illustration">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__social-media">
+      <div class="footer__social-media--link">
+        <i class="fa-brands fa-facebook-f fa-xl"></i>
+      </div>
+      <div class="footer__social-media--link">
+        <i class="fa-brands fa-twitter fa-xl"></i>
+      </div>
+      <div class="footer__social-media--link">
+        <i class="fa-brands fa-instagram fa-xl"></i>
+      </div>
+    </div>
+    <div class="footer__copyright">&copy; Copyright Ping. All rights reserved.</div>
+  </footer>
+</body>
+<script src="app.js"></script>
+</html>
